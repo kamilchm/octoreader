@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "octoreader",
+  "version": "1.0.0",
+
+  "description": "Read GitHub notifications faster",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
