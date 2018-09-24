@@ -12,10 +12,17 @@ const mute = function(selected) {
   muteButton.click()
 }
 
+const markReadAll = function() {
+  var markAllButton = document.querySelector('button.mark-all-as-read')
+  markAllButton.click()
+}
+
 document.body.addEventListener('keydown', function(ev) {
   var selected = querySelected()
   if (selected) {
     if (ev.key == 'w') open(selected)
     if (ev.key == 'q') mute(selected)
+  } else {
+    if (ev.key == 'e') markReadAll()
   }
 })
