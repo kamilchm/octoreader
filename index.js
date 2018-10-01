@@ -14,10 +14,11 @@ const mute = function(selected) {
 
 const markReadAll = function() {
   var markAllButton = document.querySelector('button.mark-all-as-read')
-  var markRemainingButton = document.querySelector('js-mark-remaining-as-read p button')
+  var markRemainingButton = document.querySelector('.js-mark-remaining-as-read p button')
   if (markAllButton) {
     markAllButton.click()
-  } else if (markRemainingButton) {
+  }
+  if (markRemainingButton) {
     markRemainingButton.click()
   }
 }

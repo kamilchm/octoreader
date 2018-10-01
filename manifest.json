@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "octoreader",
-  "version": "1.2.0",
+  "version": "1.2.1",
 
   "description": "Read GitHub notifications faster",
 
