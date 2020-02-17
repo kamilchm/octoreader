@@ -1,5 +1,5 @@
 const querySelected = function() {
-  return document.querySelector('li.js-notification[aria-selected=true]')
+  return document.querySelector('li.js-notification.navigation-focus')
 }
 
 const open = function(selected) {
