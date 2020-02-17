@@ -1,15 +1,14 @@
 {
   "name": "octoreader",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "Read GitHub notifications faster",
   "main": "index.js",
   "author": "Kamil Chmielewski <kamil.chm@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.9.3",
-    "parcel-plugin-web-extension": "^1.1.0",
-    "typescript-language-server": "^0.1.14",
-    "web-ext": "^2.7.0"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-web-extension": "^1.6.1",
+    "web-ext": "^4.1.0"
   },
   "scripts": {
     "bundle": "parcel build manifest.json && source ~/.web_ext_auth && web-ext sign -s dist"
